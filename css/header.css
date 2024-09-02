@@ -1,0 +1,108 @@
+.header{
+    height: 40px;
+    display: flex;
+    justify-content: space-around; 
+    background-color: rgb(253, 253, 253);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    
+}
+/* COMBINTAION CLASS - text*/
+.aboutme-text ,
+.resume-text, 
+.porfolio-text, 
+.contactme-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 130px;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: 0.15s;
+}
+.resume-text:hover, 
+.porfolio-text:hover, 
+.contactme-text:hover,
+.aboutme-text:hover{
+    background-color: rgb(58, 87, 180);
+}
+.aboutme-text a,
+.resume-text a,
+.porfolio-text a,
+.contactme-text a{
+    text-decoration: none;
+    color: black;
+}
+.div-aboutme-icon{
+    position: absolute;
+    left: 16px;
+    top: 11px;
+}
+.allaboutme-text{ 
+    font-weight: 500;
+    background-color: gray;  
+    font-size: 10px;
+    color: white;
+    position: absolute;
+    bottom: -40px;
+    padding: 6px 18px;
+    border-radius: 3px;
+    opacity: 0;
+    pointer-events: none;
+}
+.aboutme-text:hover .allaboutme-text,
+.resume-text:hover  .gotomyresume-text,
+.porfolio-text:hover .gotomyportfolio-text,
+.contactme-text:hover .youcancontactmehere-text{
+    opacity: 1;
+}
+/*COMNINATION CLASS STYLE*/
+.gotomyresume-text, 
+.gotomyportfolio-text, 
+.youcancontactmehere-text{
+    font-family: 'Segoe UI', Arial;
+    font-weight: 500;
+    background-color: gray;  
+    font-size: 10px;
+    color: white;
+    position: absolute;
+    bottom: -40px;
+    opacity: 0;
+    pointer-events: none;
+    padding: 6px 18px;
+    border-radius: 3px;
+    white-space: nowrap;
+}
+/*COMBINATION of CLASS = ICON style*/
+.aboutme-icon, .resume-icon, .portfolio-icon{
+    width: 16px;
+    border: 0;  
+}
+.div-resume-icon{
+    position: absolute;
+    top: 14px;
+    left: 20px;
+}
+.div-portfolio-icon{
+    position: absolute;
+    top: 12px;
+    left: 16px;
+}
+.div-contactme-icon{
+    position: absolute;
+    left: 10px;
+    top: 15px;
+}
+.contactme-icon{
+    width: 14px;
+}
+
+
+
+
+
+

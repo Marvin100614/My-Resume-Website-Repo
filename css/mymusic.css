@@ -1,0 +1,88 @@
+#mymusic{
+    width: 100%;
+    background-color: white;
+}
+#mymusic p{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Arial;   
+    color: black;
+    padding: 5% 0px 0px 5%;
+}
+#mymusic p span{
+    color:  rgb(58, 87, 180);
+}
+ul{
+    display: flex;
+    justify-content: center;
+}
+ul li{
+    margin: 0px 5px;
+    list-style: none;
+    font-size: 16px;
+    border: solid 1px white;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: white;
+    cursor: pointer;
+}
+ul li:hover{
+    background-color: rgb(58, 87, 180);
+    transition: .4s;
+}
+.container{
+    width: 100%;
+    padding: 0px 0px 10% 10%;
+}
+.altrock{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+.altrock img{
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    box-shadow: 12px 12px 12px rgba(0,0,0, .5);
+}
+.altrock h2{
+    font-family: 'Segoe UI', Arial; 
+    color: gray;
+    font-size: 15px;
+    text-shadow: 12px 12px 12px rgba(0,0,0, .5);;
+    text-align: center;
+    font-weight: 400;
+}
+.altrock:hover{
+    opacity: .7;
+    transform: rotateX('angle');
+}
+
+.active.lovesons-container{
+   
+    display: none;
+}
+.active.alternative-container{
+    
+    display: none;
+}
+
+
+@media (max-width: 800px) {
+    #mymusic{
+        margin-top: 30%;
+    }
+    #mymusic .container{
+       text-align: center;
+        padding: 0;
+    }
+   
+ }
+
+ @media (min-width: 801px) and (max-width: 894px){
+    #mymusic{
+        margin-top: 10%;
+    }
+ }
